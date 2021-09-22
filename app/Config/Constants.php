@@ -77,3 +77,39 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+/*
+ | --------------------------------------------------------------------------
+ | CUSTOM CONSTANTS
+ | --------------------------------------------------------------------------
+*/
+
+define("APP_NAME", "Intranet KAO Sport");
+define("EMPRESA_NAME", "KAO Sport");
+define("APP_UNIQUE_KEY", "Kao2021$");
+define("LOGO_NAME", "./assets/img/logo.png");
+define("PATH_LOGO_CLARO", "./assets/img/logo-claro.png");
+define("APP_VERSION", "2021.05.21");
+define("ROOT_PATH","");   //Root del proyecto
+define("DEFAULT_DBName","MODELOKIND_V7");  // PARA HACER PRUEBAS EN EL API cuando no esa login
+define("DEFAULT_DBName_wssp","KAO_wssp");  
+
+
+/* Descarga de Archivos de Ejemplo */
+define("AYUDA_ACTUALIZAR_PRECIOS_PRODUCTOS","./assets/img/ayudas/ayuda_actualizarPrecioProductos.png");  
+define("PLANTILLA_ACTUALIZAR_PRECIOS_PRODUCTOS","./assets/docs/plantilla-actualizarPreciosProductos.xlsx");  
+define("AYUDA_ACTUALIZAR_COLECCION_PRODUCTOS","./assets/img/ayudas/ayuda_actualizarColeccionProductos.png");  
+define("PLANTILLA_ACTUALIZAR_COLECCION_PRODUCTOS","./assets/docs/plantilla-actualizarColeccionProductos.xlsx"); 
+define("AYUDA_ACTUALIZAR_MARCA_PRODUCTOS","./assets/img/ayudas/ayuda_actualizarMarcaProductos.png");  
+define("PLANTILLA_ACTUALIZAR_MARCA_PRODUCTOS","./assets/docs/plantilla-actualizarMarcaProductos.xlsx");  
+
+define("IMAGES_UPLOAD_DIR", $_SERVER['DOCUMENT_ROOT'].'/uploadsCotizaciones');
+
+define("VIEWS_PATH","/views");
+define("CONFIG_FILE","./config/configuraciones.xml");
+define("DEFAULT_EMAIL","ventas@agricolabaquero.com");
+
+
+/*URL Body Email*/
+define("LOGO_ONLINE","");
+define("SITIOWEB_ONLINE","");

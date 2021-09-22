@@ -1,0 +1,143 @@
+html,
+body { height: 100%; }
+
+body {
+  margin: 0;
+  background: linear-gradient(#eeeeee, #cccccc);
+  overflow: hidden;
+}
+
+.selector {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 140px;
+  margin-top: -70px;
+  margin-left: -70px;
+}
+
+.selector,
+.selector button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  
+}
+
+.selector button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center; 
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.selector button:hover { 
+ color: black;
+}
+
+
+.selector ul {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+}
+
+.selector li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(-360deg);
+  transition: all 0.8s ease-in-out;
+}
+
+.selector li input { display: none; }
+
+.selector li input + label {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  line-height: 1px;
+  margin-left: 0;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.8s ease-in-out;
+}
+
+.selector.open li input + label {
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  margin-left: -30px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  background-size:contain;
+  color: rgb(0, 0, 0);
+  font-size: 1.25rem;
+  padding-top: 10px;
+}
+
+#menu1{
+ /*background-image: url("../files/evaluacionempleados.png");*/
+}
+
+#menu2{
+ background-image: url("../files/valesperdida.png");
+}
+
+#menu3{
+ background-image: url("../files/checklistlocales.png");
+}
+
+#menu4{
+ background-image: url("../files/config.png");
+}
+
+#menu5{
+ background-image: url("../files/registroanfitriones.png");
+}
+
+#menu6{
+ background-image: url("../files/evaluacionjefes.png");
+}
+
+#menu7{
+ background-image: url("../files/mantenimientos.png");
+}
+
+#menu8{
+ background-image: url("../files/ordenPedido.png");
+}
+#menu9{
+ background-image: url("../files/estadovehiculo.png");
+}
+#menu10{
+ background-image: url("../files/carteraClintes.png");
+}
+#menu11{
+ background-image: url("../files/menu2.png");
+}
+#menu12{
+ background-image: url("../files/evaluacionempleados.png");
+}
+
