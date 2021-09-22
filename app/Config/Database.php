@@ -32,11 +32,11 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => '',
-        'hostname' => '196.168.1.201',
-        'username' => 'programacion',
-        'password' => 'progra123',
-        'database' => 'MODELOKIND_V7',
-        'DBDriver' => 'sqlsrv',
+        'hostname' => '',
+        'username' => '',
+        'password' => '',
+        'database' => '',
+        'DBDriver' => '',
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),

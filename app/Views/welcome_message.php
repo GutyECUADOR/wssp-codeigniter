@@ -224,7 +224,7 @@
 		<h2>The small framework with powerful features <?php
 
 			foreach ($result as $row) {
-				echo $row->Codigo;
+				echo $row->nombre;
 				
 			}
 		
