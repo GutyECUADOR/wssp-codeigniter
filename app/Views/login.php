@@ -46,7 +46,9 @@
 
         <div class="col">
             <div class="row">
-                <form class="form-signin" method="POST" autocomplete="off"  class="formulario" name="formulario_registro">
+                <?php 
+                    echo form_open('login/checklogin', 'class="form-signin"  autocomplete="off"  class="formulario" name="formulario_registro"');
+                ?>
                     <div class="text-center">
                         <img style="max-width: 75%;" src="<?php echo LOGO_NAME?>" alt="Logo">
                     </div>
@@ -55,22 +57,31 @@
                     <h2 class="form-signin-heading text-center"><?php echo APP_NAME?></h2>
 
                     <div class="alert alert-info text-center">
-                    <strong>Recuerde</strong>, siempre borrar datos de navegacion antes de ingresar al aplicativo.
+                        <strong>Recuerde</strong>, siempre borrar datos de navegacion antes de ingresar al aplicativo.
                     </div>
+
+                    <?php if (session('message')): ?>
+                        <div class="alert alert-danger text-center">
+                           <?= session('message') ?>
+                        </div>
+                    <?php endif; ?>
+                    
 
                     <?php  ?>
                     <input type="hidden" name="preaction" value="<?php echo isset($_GET['preaction']) ? $_GET['preaction'] : ''?>">
                     
-                    <select class="form-control" name="select_empresa" id="select_empresa" required autofocus>
+                    <select class="form-control" name="empresa" id="empresa" required autofocus>
                         <option value=''>Seleccione Empresa</option>
                         <?php
-                        
+                            foreach ($databases as $database) {
+                                echo "<option value='$database->dbgroup'>$database->nombre</option>";
+                            }
                         ?>
                     
                     </select>
                     
-                    <input type="text" class="form-control" name="login_username" id="inputuser" maxlength="30" placeholder="Usuario del Sistema o RUC" required>
-                    <input type="password" class="form-control" name="login_password" id="inputpass" placeholder="Contraseña" maxlength="50" required >
+                    <input type="text" class="form-control" name="usuario" id="inputuser" maxlength="30" placeholder="Usuario del Sistema o RUC" value="<?= old('usuario') ?>" required>
+                    <input type="password" class="form-control" name="password" id="inputpass" placeholder="Contraseña" maxlength="50"  value="<?= old('password') ?>" required >
                 
                     <div class="btn-group btn-group-justified" role="group" aria-label="...">
                         

@@ -64,20 +64,21 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <?php
-                    if (isset($_SESSION["usuarioRUC".APP_UNIQUE_KEY])){
+                    if (session('logged_in')){
                 ?> 
                     
                         <li><a id="liveclock"></a></li>
                         <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i></i> Bienvenido, <?php echo $_SESSION["usuarioNOMBRE".APP_UNIQUE_KEY] ?><span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user" aria-hidden="true"></i></i> Bienvenido, <?php echo session('usuario') ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <?php if ($_SESSION["usuarioNOMBRE".APP_UNIQUE_KEY] == 'SUPERUSUARIO') {
+                            <?php if (session('logged_in')) {
                             
                             ?>
                             <li><a href="?action=admin"><span class="glyphicon glyphicon-log-in" ></span> Administración </a></li>
                             
                             <?php }?>
-                            <li><a href="?action=logout"><span class="glyphicon glyphicon-log-out" ></span> Cerrar Sesión </a></li>
+                            <li><a href="<?php echo base_url('/logout'); ?>"><span class="glyphicon glyphicon-log-out" ></span> Cerrar Sesión </a></li>
                             
                         </ul>
                         </li>
@@ -85,7 +86,7 @@
                     }else{
                 ?> 
                         <li><a id="liveclock"></a></li>
-                        <li><a href="<?php echo base_url().'/login'?>">Iniciar Sesión</a></li>
+                        <li><a href="<?php echo base_url('/login')?>">Iniciar Sesión</a></li>
                 <?php         
                     }
                 ?>
