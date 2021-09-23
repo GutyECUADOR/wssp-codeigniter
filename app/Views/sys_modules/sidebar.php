@@ -6,6 +6,13 @@
             </a>
         </li>
 
-        
+        <?php 
+            $uri = service('uri'); // Loading 'uri' service
+            foreach ($items_menu as $option) : 
+        ?>
+        <li><a href="<?= base_url($option->route)?>" class="<?php if('/'.$uri->getSegment(1)==trim($option->route)){echo "active";} ?>">
+                <i class="<?= $option->iconClass;?>"></i> <?= $option->nombre ?>
+            </a></li>
+        <?php endforeach; ?>  
     </ul>
 </div>

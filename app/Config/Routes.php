@@ -35,7 +35,11 @@ $routes->get('/', 'HomeController::index');
 $routes->get('/login', 'LoginController::index');
 $routes->get('/logout', 'LoginController::logout');
 
-$routes->get('/inventario', 'InventarioController::index');
+/* MODULO DE INVENTARIO  */
+$routes->group('inventario', function ($routes) {
+    $routes->get('/', 'InventarioController::index');
+    $routes->get('/updateProduct', 'InventarioController::updateProduct');
+});
 
 
 $routes->group('api', ['namespace' => 'App\API\v1'], function ($routes) {

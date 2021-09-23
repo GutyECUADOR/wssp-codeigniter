@@ -43,7 +43,7 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-        <?= $this->include('sys_modules/navbar-admin') ?>
+        <?= $this->include('sys_modules/navbar-toggle') ?>
 
           <?= $this->renderSection('contenido') ?>
                 
