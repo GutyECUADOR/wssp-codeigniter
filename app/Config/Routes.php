@@ -31,9 +31,17 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('/login', 'Login::index');
-$routes->get('/logout', 'Login::logout');
+$routes->get('/', 'HomeController::index');
+$routes->get('/login', 'LoginController::index');
+$routes->get('/logout', 'LoginController::logout');
+
+$routes->get('/inventario', 'InventarioController::index');
+
+
+$routes->group('api', ['namespace' => 'App\API\v1'], function ($routes) {
+    //$routes->resource('users');
+});
+
 
 /*
  * --------------------------------------------------------------------

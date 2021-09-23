@@ -47,7 +47,7 @@
         <div class="col">
             <div class="row">
                 <?php 
-                    echo form_open('login/checklogin', 'class="form-signin"  autocomplete="off"  class="formulario" name="formulario_registro"');
+                    echo form_open('loginController/checklogin', 'class="form-signin"  autocomplete="off"  class="formulario" name="formulario_registro"');
                 ?>
                     <div class="text-center">
                         <img style="max-width: 75%;" src="<?php echo LOGO_NAME?>" alt="Logo">

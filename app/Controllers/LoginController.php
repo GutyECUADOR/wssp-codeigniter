@@ -6,7 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\DataBaseModel;
 use App\Models\UsuarioModel;
 
-class Login extends BaseController {
+class LoginController extends BaseController {
 
     private $dataBaseModel;
     private $usuarioModel;
@@ -22,7 +22,7 @@ class Login extends BaseController {
                         ->orderBy('nombre', 'asc')
                         ->findAll();
         helper('form');
-        return view('login', compact('databases'));
+        return view('modulos/loginView', compact('databases'));
 	}
 
 	public function checklogin() {
