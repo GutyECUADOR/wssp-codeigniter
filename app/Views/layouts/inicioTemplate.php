@@ -37,26 +37,7 @@
   </head>
   <body>
     
-    <div id="wrapper">  
-        <!-- Sidebar -->
-        <?= $this->include('sys_modules/sidebar') ?>
-
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-        <?= $this->include('sys_modules/navbar-admin') ?>
-
-          <?= $this->renderSection('contenido') ?>
-                
-            </div>    
-            <!-- container-fluid -->
-        </div>
-        <!-- /#page-content-wrapper -->
-
-        
-        
-    </div>
-
-   
+    <?= $this->renderSection('contenido') ?>
 
     <script type="text/javascript" src="assets\js\libs\vue.js"></script>
     <script type="text/javascript" src="assets\js\libs\jquery.min.js"></script>

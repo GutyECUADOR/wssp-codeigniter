@@ -6,7 +6,7 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        return view('modulos/inicioView');
+        return view('inicioView');
     }
 
 }

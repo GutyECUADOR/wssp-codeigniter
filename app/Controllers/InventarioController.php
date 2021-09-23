@@ -8,6 +8,6 @@ class InventarioController extends BaseController
 {
     public function index()
     {
-        return view('modulos/inventarioView');
+        return view('inventarioView');
     }
 }

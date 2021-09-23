@@ -6,13 +6,6 @@
             </a>
         </li>
 
-        <?php
-            foreach ($menus as $option) {
-        ?>
-
         
-        <?php
-            }
-        ?>
     </ul>
 </div>

@@ -22,7 +22,7 @@ class LoginController extends BaseController {
                         ->orderBy('nombre', 'asc')
                         ->findAll();
         helper('form');
-        return view('modulos/loginView', compact('databases'));
+        return view('loginView', compact('databases'));
 	}
 
 	public function checklogin() {

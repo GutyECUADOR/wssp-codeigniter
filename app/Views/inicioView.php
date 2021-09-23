@@ -1,4 +1,4 @@
-<?= $this->extend('layouts/basetemplate') ?>
+<?= $this->extend('layouts/inicioTemplate') ?>
 
 <?= $this->section('css')?>
     <link rel="stylesheet" href="assets\css\circlemenu.css"> 
@@ -7,6 +7,7 @@
 
 <?= $this->section('contenido')?>
     <!--Inicio Contenido -->
+    <?= $this->include('sys_modules/navbar') ?>
 
     <div id="menu_circle">
         <div class='selector'>
