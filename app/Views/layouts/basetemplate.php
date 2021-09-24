@@ -11,23 +11,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="shortcut icon" href="assets\img\favicon.ico">
+    <link rel="shortcut icon" href="<?=base_url()?>/assets/img/favicon.ico">
 
     <!-- CSS Bootstrap -->
-    <link rel="stylesheet" href="assets\css\bootstrap.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>/assets/css/bootstrap.min.css">
     
     <!-- Librerias-->
-    <link rel="stylesheet" href="assets\css\bootstrap-datepicker.css">
-    <link rel="stylesheet" href="assets\css\font-awesome.min.css">
-    <link rel="stylesheet" type="text/css"  href="assets\css\sweetalert.css" />
+    <link rel="stylesheet" href="<?=base_url()?>/assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="<?=base_url()?>/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>/assets/css/sweetalert.css" />
 
     <!-- CSS Propios -->
-    <link rel="stylesheet" href="assets\css\loaders.css">
-    <link rel="stylesheet" href="assets\css\pnotify.custom.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>/assets/css/loaders.css">
+    <link rel="stylesheet" href="<?=base_url()?>/assets/css/pnotify.custom.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets\css\custom.css?<?php echo date('Ymdhiiss')?>">
-    <link rel="stylesheet" href="assets\css\circlemenu.css"> 
+    <link rel="stylesheet" href="<?=base_url()?>/assets/css/custom.css?<?php echo date('Ymdhiiss')?>">
+    
 
     <?= $this->renderSection('css') ?>
 
@@ -58,10 +58,10 @@
 
    
 
-    <script type="text/javascript" src="assets\js\libs\vue.js"></script>
-    <script type="text/javascript" src="assets\js\libs\jquery.min.js"></script>
-    <script type="text/javascript" src="assets\js\libs\bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets\js\libs\moment.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>/assets/js/libs/vue.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>/assets/js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>/assets/js/libs/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?=base_url()?>/assets/js/libs/moment.min.js"></script>
     <?= $this->renderSection('js') ?>
   </body>
 </html>

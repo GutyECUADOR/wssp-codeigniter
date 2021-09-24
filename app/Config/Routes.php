@@ -32,13 +32,13 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'HomeController::index');
-$routes->get('/login', 'LoginController::index');
-$routes->get('/logout', 'LoginController::logout');
+$routes->get('login', 'LoginController::index');
+$routes->get('logout', 'LoginController::logout');
 
 /* MODULO DE INVENTARIO  */
 $routes->group('inventario', function ($routes) {
     $routes->get('/', 'InventarioController::index');
-    $routes->get('/updateProduct', 'InventarioController::updateProduct');
+    $routes->get('updateProducto', 'InventarioController::updateProducto');
 });
 
 
