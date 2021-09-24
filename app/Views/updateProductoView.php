@@ -152,9 +152,9 @@
             
 
             <!-- Modal Info sesion -->
-            
+            <?= $this->include('modals/modalInfoSession') ?>
             <!-- Modal de Ayuda -->
-            
+            <?= $this->include('modals/modalAyudaUpdateProducto') ?>
 
         </form>
     </div>   

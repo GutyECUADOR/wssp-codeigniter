@@ -98,10 +98,7 @@ define("DEFAULT_DBName_wssp","KAO_wssp");
 /* Descarga de Archivos de Ejemplo */
 define("AYUDA_ACTUALIZAR_PRECIOS_PRODUCTOS","./assets/img/ayudas/ayuda_actualizarPrecioProductos.png");  
 define("PLANTILLA_ACTUALIZAR_PRECIOS_PRODUCTOS","./assets/docs/plantilla-actualizarPreciosProductos.xlsx");  
-define("AYUDA_ACTUALIZAR_COLECCION_PRODUCTOS","./assets/img/ayudas/ayuda_actualizarColeccionProductos.png");  
-define("PLANTILLA_ACTUALIZAR_COLECCION_PRODUCTOS","./assets/docs/plantilla-actualizarColeccionProductos.xlsx"); 
-define("AYUDA_ACTUALIZAR_MARCA_PRODUCTOS","./assets/img/ayudas/ayuda_actualizarMarcaProductos.png");  
-define("PLANTILLA_ACTUALIZAR_MARCA_PRODUCTOS","./assets/docs/plantilla-actualizarMarcaProductos.xlsx");  
+
 
 define("IMAGES_UPLOAD_DIR", $_SERVER['DOCUMENT_ROOT'].'/uploadsCotizaciones');
 

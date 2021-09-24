@@ -16,7 +16,7 @@
             <h4 class="card-title">Actualizacion de Precios</h4>
             <h6 class="card-subtitle mb-2 text-muted">Inventario</h6>
             <p class="card-text">Permite la actualizacion de precios de los articulos de Winfenix mediante una plantilla Excel.</p>
-            <a href="#" class="btn btn-primary" role="button">Ir al Formulario</a>
+            <a href="<?= base_url('inventario/updateProducto'); ?>" class="btn btn-primary" role="button">Ir al Formulario</a>
             </div>
         </div> 
         </div> <!-- end col -->

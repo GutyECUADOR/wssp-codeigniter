@@ -31,7 +31,7 @@
                     <?php if (session('logged_in')) {
                     
                     ?>
-                    <li><a href="?action=admin"><span class="glyphicon glyphicon-log-in" ></span> Administración </a></li>
+                    <li><a href="<?php echo base_url('/administration'); ?>"><span class="glyphicon glyphicon-log-in" ></span> Administración </a></li>
                     
                     <?php }?>
                     <li><a href="<?php echo base_url('/logout'); ?>"><span class="glyphicon glyphicon-log-out" ></span> Cerrar Sesión </a></li>
