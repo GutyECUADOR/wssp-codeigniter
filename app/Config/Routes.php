@@ -42,8 +42,8 @@ $routes->group('inventario', function ($routes) {
 });
 
 
-$routes->group('api', ['namespace' => 'App\API\v1'], function ($routes) {
-    //$routes->resource('users');
+$routes->group('api', function ($routes) {
+    $routes->resource('databases', ['controller' => 'RestDataBaseController']);
 });
 
 

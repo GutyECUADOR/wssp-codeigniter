@@ -44,16 +44,16 @@ const app = new Vue({
     },
     methods:{
       init() {
-        fetch(`./api/inventario/index.php?action=getInfoInitForm_actualizarPrecioProducto`)
+        fetch(`../api/databases`)
           .then(response => {
             return response.json();
           })
           .then(result => {
-            console.log('InitForm', result.data);
+            console.log('InitForm', result);
             const { databases } = result.data;
             this.databases = databases;
           }).catch(error => {
-            alert(error);
+            //alert(error);
             console.error(error);
           });
       },

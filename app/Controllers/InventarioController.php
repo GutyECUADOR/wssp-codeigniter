@@ -21,4 +21,6 @@ class InventarioController extends BaseController
         $items_menu = $query->getResult();
         return view('updateProductoView', compact('items_menu'));
     }
+
+
 }

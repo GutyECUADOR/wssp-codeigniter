@@ -163,6 +163,9 @@
 
 <?= $this->section('js')?>
     <script src="<?=base_url()?>/assets/js/pages/inicio.js?<?php echo date('Ymdhiiss')?>"></script>
+    <script src="<?=base_url()?>/assets/js/pages/actualizarPreciosProductos.js?<?php echo date('Ymdhiiss')?>"></script>
+
+    
 <?= $this->endSection()?>
     
 
